@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96FBE8F8-3F2F-4AE3-9F40-126713B508F8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>middleeast_project</RootNamespace>
+    <AssemblyName>middleeast_project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\adminpage.aspx" />
+    <Content Include="admin\catageory.aspx" />
+    <Content Include="admin\DashBoard.aspx" />
+    <Content Include="files\feane\.gitattributes" />
+    <Content Include="files\feane\about.html" />
+    <Content Include="files\feane\book.html" />
+    <Content Include="files\feane\css\bootstrap.css" />
+    <Content Include="files\feane\css\font-awesome.min.css" />
+    <Content Include="files\feane\css\responsive.css" />
+    <Content Include="files\feane\css\style.css" />
+    <Content Include="files\feane\images\about-img.png" />
+    <Content Include="files\feane\images\client1.jpg" />
+    <Content Include="files\feane\images\client2.jpg" />
+    <Content Include="files\feane\images\f1.png" />
+    <Content Include="files\feane\images\f2.png" />
+    <Content Include="files\feane\images\f3.png" />
+    <Content Include="files\feane\images\f4.png" />
+    <Content Include="files\feane\images\f5.png" />
+    <Content Include="files\feane\images\f6.png" />
+    <Content Include="files\feane\images\f7.png" />
+    <Content Include="files\feane\images\f8.png" />
+    <Content Include="files\feane\images\f9.png" />
+    <Content Include="files\feane\images\favicon.png" />
+    <Content Include="files\feane\images\hero-bg.jpg" />
+    <Content Include="files\feane\images\o1.jpg" />
+    <Content Include="files\feane\images\o2.jpg" />
+    <Content Include="files\feane\index.html" />
+    <Content Include="files\feane\js\bootstrap.js" />
+    <Content Include="files\feane\js\custom.js" />
+    <Content Include="files\feane\js\jquery-3.4.1.min.js" />
+    <Content Include="files\feane\menu.html" />
+    <Content Include="files\guruable\accordion.html" />
+    <Content Include="files\guruable\assets\css\animate.css\css\animate.css" />
+    <Content Include="files\guruable\assets\css\bootstrap\css\bootstrap.min.css" />
+    <Content Include="files\guruable\assets\css\jquery.mCustomScrollbar.css" />
+    <Content Include="files\guruable\assets\css\morris.js\css\morris.css" />
+    <Content Include="files\guruable\assets\css\style.css" />
+    <Content Include="files\guruable\assets\icon\icofont\css\icofont.css" />
+    <Content Include="files\guruable\assets\icon\icofont\fonts\icofont.svg" />
+    <Content Include="files\guruable\assets\icon\themify-icons\fonts\themify.svg" />
+    <Content Include="files\guruable\assets\icon\themify-icons\themify-icons.css" />
+    <Content Include="files\guruable\assets\images\auth\logo-dark.png" />
+    <Content Include="files\guruable\assets\images\auth\Logo-small-bottom.png" />
+    <Content Include="files\guruable\assets\images\auth\logo.png" />
+    <Content Include="files\guruable\assets\images\avatar-1.jpg" />
+    <Content Include="files\guruable\assets\images\avatar-2.jpg" />
+    <Content Include="files\guruable\assets\images\avatar-3.jpg" />
+    <Content Include="files\guruable\assets\images\avatar-4.jpg" />
+    <Content Include="files\guruable\assets\images\bg.jpg" />
+    <Content Include="files\guruable\assets\images\favicon.ico" />
+    <Content Include="files\guruable\assets\images\flags\ENGLISH.jpg" />
+    <Content Include="files\guruable\assets\images\flags\FRANCE.jpg" />
+    <Content Include="files\guruable\assets\images\flags\PORTO.jpg" />
+    <Content Include="files\guruable\assets\images\flags\SPAIN.jpg" />
+    <Content Include="files\guruable\assets\images\logo.png" />
+    <Content Include="files\guruable\assets\images\mega-menu\01.jpg" />
+    <Content Include="files\guruable\assets\images\mega-menu\02.jpg" />
+    <Content Include="files\guruable\assets\images\mega-menu\03.jpg" />
+    <Content Include="files\guruable\assets\images\mega-menu\04.jpg" />
+    <Content Include="files\guruable\assets\images\mega-menu\05.jpg" />
+    <Content Include="files\guruable\assets\images\mega-menu\06.jpg" />
+    <Content Include="files\guruable\assets\images\pattern2.jpg" />
+    <Content Include="files\guruable\assets\images\user.png" />
+    <Content Include="files\guruable\assets\js\bootstrap-growl.min.js" />
+    <Content Include="files\guruable\assets\js\bootstrap\js\bootstrap.min.js" />
+    <Content Include="files\guruable\assets\js\classie.js" />
+    <Content Include="files\guruable\assets\js\classie\classie.js" />
+    <Content Include="files\guruable\assets\js\common-pages.js" />
+    <Content Include="files\guruable\assets\js\demo-12.js" />
+    <Content Include="files\guruable\assets\js\jquery-slimscroll\jquery.slimscroll.js" />
+    <Content Include="files\guruable\assets\js\jquery-ui\jquery-ui.min.js" />
+    <Content Include="files\guruable\assets\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="files\guruable\assets\js\jquery.mousewheel.min.js" />
+    <Content Include="files\guruable\assets\js\jquery\jquery.min.js" />
+    <Content Include="files\guruable\assets\js\modernizr\css-scrollbars.js" />
+    <Content Include="files\guruable\assets\js\modernizr\modernizr.js" />
+    <Content Include="files\guruable\assets\js\morris.js\morris.js" />
+    <Content Include="files\guruable\assets\js\pcoded.min.js" />
+    <Content Include="files\guruable\assets\js\popper.js\popper.min.js" />
+    <Content Include="files\guruable\assets\js\raphael\raphael.min.js" />
+    <Content Include="files\guruable\assets\js\script.js" />
+    <Content Include="files\guruable\assets\js\script.min.js" />
+    <Content Include="files\guruable\assets\js\SmoothScroll.js" />
+    <Content Include="files\guruable\assets\pages\accordion\accordion.js" />
+    <Content Include="files\guruable\assets\pages\accordion\accordion.min.js" />
+    <Content Include="files\guruable\assets\pages\chart\morris\morris-custom-chart.js" />
+    <Content Include="files\guruable\assets\pages\dashboard\amchart\css\amchart.css" />
+    <Content Include="files\guruable\assets\pages\dashboard\amchart\css\export.css" />
+    <Content Include="files\guruable\assets\pages\dashboard\amchart\js\amcharts.js" />
+    <Content Include="files\guruable\assets\pages\dashboard\amchart\js\custom-amchart.js" />
+    <Content Include="files\guruable\assets\pages\dashboard\amchart\js\export.min.js" />
+    <Content Include="files\guruable\assets\pages\dashboard\amchart\js\images\dragIconRoundBig.svg" />
+    <Content Include="files\guruable\assets\pages\dashboard\amchart\js\images\dragIconRoundBigH.svg" />
+    <Content Include="files\guruable\assets\pages\dashboard\amchart\js\light.js" />
+    <Content Include="files\guruable\assets\pages\dashboard\amchart\js\serial.js" />
+    <Content Include="files\guruable\assets\pages\dashboard\custom-dashboard.js" />
+    <Content Include="files\guruable\assets\pages\google-maps\gmaps.min.js" />
+    <Content Include="files\guruable\assets\pages\google-maps\jquery.gmaps.js" />
+    <Content Include="files\guruable\assets\pages\icon-modal.js" />
+    <Content Include="files\guruable\assets\pages\notification\notification.css" />
+    <Content Include="files\guruable\assets\pages\notification\notification.js" />
+    <Content Include="files\guruable\assets\pages\todo\todo.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\amcharts.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\amcharts.min.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\ammap.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\ammap.min.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\continentsLow.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\continentsLow.min.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\gauge.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\gauge.min.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\light.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\light.min.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\pie.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\pie.min.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\serial.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\serial.min.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\worldLow.js" />
+    <Content Include="files\guruable\assets\pages\widget\amchart\worldLow.min.js" />
+    <Content Include="files\guruable\auth-normal-sign-in.html" />
+    <Content Include="files\guruable\auth-sign-up.html" />
+    <Content Include="files\guruable\breadcrumb.html" />
+    <Content Include="files\guruable\bs-basic-table.html" />
+    <Content Include="files\guruable\button.html" />
+    <Content Include="files\guruable\chart.html" />
+    <Content Include="files\guruable\color.html" />
+    <Content Include="files\guruable\form-elements-component.html" />
+    <Content Include="files\guruable\icon-themify.html" />
+    <Content Include="files\guruable\index.html" />
+    <Content Include="files\guruable\label-badge.html" />
+    <Content Include="files\guruable\map-google.html" />
+    <Content Include="files\guruable\notification.html" />
+    <Content Include="files\guruable\progress-bar.html" />
+    <Content Include="files\guruable\sample-page.html" />
+    <Content Include="files\guruable\tabs.html" />
+    <Content Include="files\guruable\tooltip.html" />
+    <Content Include="files\guruable\typography.html" />
+    <Content Include="user\aboutpage.aspx" />
+    <Content Include="user\booktable.aspx" />
+    <Content Include="user\default.aspx" />
+    <Content Include="user\menu.aspx" />
+    <Content Include="user\WebUserControl1.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminpage.aspx.cs">
+      <DependentUpon>adminpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminpage.aspx.designer.cs">
+      <DependentUpon>adminpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\catageory.aspx.cs">
+      <DependentUpon>catageory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\catageory.aspx.designer.cs">
+      <DependentUpon>catageory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DashBoard.aspx.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DashBoard.aspx.designer.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\connection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user\aboutpage.aspx.cs">
+      <DependentUpon>aboutpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\aboutpage.aspx.designer.cs">
+      <DependentUpon>aboutpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\booktable.aspx.cs">
+      <DependentUpon>booktable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\booktable.aspx.designer.cs">
+      <DependentUpon>booktable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\user.Master.cs">
+      <DependentUpon>user.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\user.Master.designer.cs">
+      <DependentUpon>user.Master</DependentUpon>
+    </Compile>
+    <Compile Include="user\WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="user\user.Master" />
+    <Content Include="files\feane\.git\COMMIT_EDITMSG" />
+    <Content Include="files\feane\.git\config" />
+    <Content Include="files\feane\.git\description" />
+    <Content Include="files\feane\.git\FETCH_HEAD" />
+    <Content Include="files\feane\.git\HEAD" />
+    <Content Include="files\feane\.git\hooks\applypatch-msg.sample" />
+    <Content Include="files\feane\.git\hooks\commit-msg.sample" />
+    <Content Include="files\feane\.git\hooks\fsmonitor-watchman.sample" />
+    <Content Include="files\feane\.git\hooks\post-update.sample" />
+    <Content Include="files\feane\.git\hooks\pre-applypatch.sample" />
+    <Content Include="files\feane\.git\hooks\pre-commit.sample" />
+    <Content Include="files\feane\.git\hooks\pre-merge-commit.sample" />
+    <Content Include="files\feane\.git\hooks\pre-push.sample" />
+    <Content Include="files\feane\.git\hooks\pre-rebase.sample" />
+    <Content Include="files\feane\.git\hooks\pre-receive.sample" />
+    <Content Include="files\feane\.git\hooks\prepare-commit-msg.sample" />
+    <Content Include="files\feane\.git\hooks\push-to-checkout.sample" />
+    <Content Include="files\feane\.git\hooks\update.sample" />
+    <Content Include="files\feane\.git\index" />
+    <Content Include="files\feane\.git\info\exclude" />
+    <Content Include="files\feane\.git\logs\HEAD" />
+    <Content Include="files\feane\.git\logs\refs\heads\main" />
+    <Content Include="files\feane\.git\logs\refs\remotes\origin\main" />
+    <Content Include="files\feane\.git\objects\07\c00cd227da09d9e398ec89ae48e5d3c218010d" />
+    <Content Include="files\feane\.git\objects\0d\1b3c62220558a66f83bfdf64aae913bd3ae8d2" />
+    <Content Include="files\feane\.git\objects\10\b4fb892fd56bd9608adc6afae349b740a95486" />
+    <Content Include="files\feane\.git\objects\18\06e407df00fba5a004306710521c7372b6483e" />
+    <Content Include="files\feane\.git\objects\18\6f713c98aed450356db23b110abad331716124" />
+    <Content Include="files\feane\.git\objects\1e\aaa62ce8a5f74737658c4819fd6a91b6c789e1" />
+    <Content Include="files\feane\.git\objects\2e\14756c762365418ea4af819f2d2cb808ae3126" />
+    <Content Include="files\feane\.git\objects\2f\36be06c2b872101b40904e21e52582b8546cd3" />
+    <Content Include="files\feane\.git\objects\2f\87072015934968fac961f1c0989a1edae2742c" />
+    <Content Include="files\feane\.git\objects\30\52660f3759c80aca51357765960b9e6167495f" />
+    <Content Include="files\feane\.git\objects\31\bbb02351fb63131b06ca13425c293589c6df58" />
+    <Content Include="files\feane\.git\objects\32\5f21b8bfeb406f2a872125ed52e98d503ae899" />
+    <Content Include="files\feane\.git\objects\34\1e9d3bcd5007ae1ac349b7f21a73a811c49749" />
+    <Content Include="files\feane\.git\objects\35\acda2fa1196aad98c2adf4378a7611dd713aa3" />
+    <Content Include="files\feane\.git\objects\39\44b82045269f96fea3e2201c091ff025f06456" />
+    <Content Include="files\feane\.git\objects\40\0014a4b06eee3d0c0d54402a47ab2601b2862b" />
+    <Content Include="files\feane\.git\objects\4a\44e50ea3147e02770eb3b8066502f9405e0f02" />
+    <Content Include="files\feane\.git\objects\4c\05c5eac990732b9e3bd0e44cd8f95381f7a458" />
+    <Content Include="files\feane\.git\objects\4d\13fc60404b91e398a37200c4a77b645cfd9586" />
+    <Content Include="files\feane\.git\objects\54\0440ce89f2a408aa699b65100e18f15e0f09ca" />
+    <Content Include="files\feane\.git\objects\55\a6ef5bb9babb975d744c980984a25eb85adbee" />
+    <Content Include="files\feane\.git\objects\58\3cf3717a7d081a4382110553a2c11e9407fd6a" />
+    <Content Include="files\feane\.git\objects\5b\b1b5b9841f514ddf5529f5a0b23baa4b9b8159" />
+    <Content Include="files\feane\.git\objects\5f\1c0be802dbb2769320628332c82054f02d60c9" />
+    <Content Include="files\feane\.git\objects\6f\9509c88bed7080d496fc5e1d87a9315e30549d" />
+    <Content Include="files\feane\.git\objects\70\d10d41fc7282c30a4088cddba2fd4e56826222" />
+    <Content Include="files\feane\.git\objects\71\45e16408e8babbbb444d616dfb48a086bfb425" />
+    <Content Include="files\feane\.git\objects\71\9ec1ec754f87c12c43bf842b30f2139b9ec00a" />
+    <Content Include="files\feane\.git\objects\8a\9fb56973b1f169185649e6ace001a0af867aa3" />
+    <Content Include="files\feane\.git\objects\8a\e04b4dc1b8979d9dac4687516a26f8b97574e0" />
+    <Content Include="files\feane\.git\objects\8b\5e21606d808a224c2b0370c921d817d9e3b5a3" />
+    <Content Include="files\feane\.git\objects\8b\d23815cfa76fab2917ce5944de83d95be345b1" />
+    <Content Include="files\feane\.git\objects\8f\4758923aa884eb810ebd68c44c6ec6632c3adf" />
+    <Content Include="files\feane\.git\objects\92\12b8ebc712418a20353febdfa44fcd06d763ac" />
+    <Content Include="files\feane\.git\objects\96\de482e0eb5d88a86fe58ad6c84a23bcbb887fb" />
+    <Content Include="files\feane\.git\objects\a9\35ba12c9b76c319a48a3121fa34e8bb8de3753" />
+    <Content Include="files\feane\.git\objects\aa\11db388ab27dba4c30101449f532368a5e8849" />
+    <Content Include="files\feane\.git\objects\b1\c1b2251ebf99b48d271193eb4a6708002f4c50" />
+    <Content Include="files\feane\.git\objects\cc\dbede6194993c77cff845eae9dc4454e6f07e0" />
+    <Content Include="files\feane\.git\objects\cd\cd2034ad54efb4668dbc243a574af7aaa8d260" />
+    <Content Include="files\feane\.git\objects\d3\3f10e3a0f55839807739c45566ebb0af4e493c" />
+    <Content Include="files\feane\.git\objects\d6\09e5320a1c6bc02123f8ae81548f4b82d49777" />
+    <Content Include="files\feane\.git\objects\da\3a3fe2d8a5019dcd3e8c1046880a336021dfb1" />
+    <Content Include="files\feane\.git\objects\df\e0770424b2a19faf507a501ebfc23be8f54e7b" />
+    <Content Include="files\feane\.git\objects\e0\1a3c8f28fc3bb62aa5af86888b5bd8d2924036" />
+    <Content Include="files\feane\.git\objects\fe\90e726c94b24482f1aaf2160fc7c06ad302277" />
+    <Content Include="files\feane\.git\objects\ff\c0db9ddee2fd0c2f9b610994902f0b5d360ef0" />
+    <Content Include="files\feane\.git\refs\heads\main" />
+    <Content Include="files\feane\.git\refs\remotes\origin\main" />
+    <Content Include="files\feane\css\style.css.map" />
+    <Content Include="files\feane\css\style.scss" />
+    <Content Include="files\feane\fonts\fontawesome-webfont.ttf" />
+    <Content Include="files\feane\fonts\fontawesome-webfont.woff" />
+    <Content Include="files\feane\fonts\fontawesome-webfont.woff2" />
+    <Content Include="admin\admin.Master" />
+    <Content Include="files\guruable\assets\icon\icofont\fonts\icofont.eot" />
+    <Content Include="files\guruable\assets\icon\icofont\fonts\icofont.ttf" />
+    <Content Include="files\guruable\assets\icon\icofont\fonts\icofont.woff" />
+    <Content Include="files\guruable\assets\icon\themify-icons\fonts\themify.eot" />
+    <Content Include="files\guruable\assets\icon\themify-icons\fonts\themify.ttf" />
+    <Content Include="files\guruable\assets\icon\themify-icons\fonts\themify.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="files\feane\.git\objects\info\" />
+    <Folder Include="files\feane\.git\objects\pack\" />
+    <Folder Include="files\feane\.git\refs\tags\" />
+    <Folder Include="images\category\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>24544</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:24525/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
